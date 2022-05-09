@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <!-- enctype="multipart/form-data" -->
+
+    <form action="/" method="post" enctype="multipart/form-data">
+        
+        <div class="drop-zone">
+            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+            <input type="file" name="myFile" class="drop-zone__input">
+        </div>
+        <script src="/static/main.js"></script>
+
+        <div class="form-group">
+            <p style="padding-top: 20px;">Choose a style:</p>
+
+            <label>
+                <input type="radio" name="style" value="sundayafternoon" alt="A Sunday Afternoon">
+                <img class="image" src="/static/styleimage/sundayafternoon.jpg">
+            </label>
+
+            <label>
+                <input type="radio" name="style" value="starrynight" alt="Starry Night">
+                <img class="image" src="/static/styleimage/starrynight.jpg">
+            </label>
+
+            <label>
+                <input type="radio" name="style" value="rain-princess" alt="Rain Princess">
+                <img class="image" src="/static/styleimage/rain-princess.jpg">
+            </label>
+            
+            <label>
+                <input type="radio" name="style" value="thegreatwave" alt="The Great Wave">
+                <img class="image" src="/static/styleimage/thegreatwave.jpg">
+            </label>
+
+            <label>
+                <input type="radio" name="style" value="mosaic" alt="Mosaic">
+                <img class="image" src="/static/styleimage/mosaic.jpg">
+            </label>
+
+            <label>
+                <input type="radio" name="style" value="monalisa" alt="Mona Lisa">
+                <img class="image" src="/static/styleimage/monalisa.jpg">
+            </label>
+
+            <label>
+                <input type="radio" name="style" value="waterlilies" alt="Waterlilies">
+                <img class="image" src="/static/styleimage/waterlilies.jpg">
+            </label>
+
+            <label>
+                <input type="radio" name="style" value="udnie" alt="Udnie">
+                <img class="image" src="/static/styleimage/udnie.jpg">
+            </label>
+
+            <label>
+                <input type="radio" name="style" value="candy" alt="Candy">
+                <img class="image" src="/static/styleimage/candy.jpg">
+            </label>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Stylize!</button>
+    </form>
+
+
+{% endblock %}
